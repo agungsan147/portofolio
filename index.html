@@ -1,273 +1,125 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+
+<!-- Disable Inspect Element -->
+
+<html lang="en" oncontextmenu="return false">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Portfolio I Agung Hidayat</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Agung147 | Anime</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <!-- Icon -->
+    <link rel="shortcut icon" href="/bantu/icon.ico" type="image/x-icon" />
 
-  <!-- Boostrap Icon -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="/1.Bootstrap v5.2/css/bootstrap.css">
+    <!-- Bootstraps -->
+    <link rel="stylesheet" href="/bantu/bootstrap/css/bootstrap.css">
 
-  <!-- AOS Animasi -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="/bantu/style.css" />
 
-  <!--My CSS  -->
-  <link rel="stylesheet" href="/Portofolio/style.css">
-
+    <!-- Animasi AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
-<body>
+<!-- Disable Inspect Element -->
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+<body oncontextmenu="return false">
+
+    <!-- Content -->
+    <div id="navbar"></div>
+    <div id="jumbotron"></div>
+    <div id="about"></div>
+    <div id="project"></div>
+
+    <!-- Gelombang -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#e2edff" fill-opacity="1"
+            d="M0,32L40,69.3C80,107,160,181,240,176C320,171,400,85,480,80C560,75,640,149,720,181.3C800,213,880,203,960,181.3C1040,160,1120,128,1200,128C1280,128,1360,160,1400,176L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
+        </path>
+    </svg>
+
+    <!-- Contact -->
     <div class="container">
-      <a class="navbar-brand" href="#">Agung147</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section1">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section2">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#section3">Contact</a>
-          </li>
-        </ul>
-      </div>
+        <div class="row">
+            <div class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+
+                <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
+                    <strong>Terimakasih!</strong> Pesan sudah terkirim.
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+
+                <div class="main" id="section3">
+                    <h2 style="text-align:center;">Contact Me</h2>
+                </div>
+
+                <form name="agung-contact-form">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Nama Lengkap</label>
+                        <input type="name" class="form-control" id="name" name="nama" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" />
+                    </div>
+                    <div class="mb-3">
+                        <label for="pesan" class="form-label">Pesan</label>
+                        <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm pt-2 pb-2 ps-3 pe-3 btn-kirim">Kirim</button>
+                    <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        Loading...
+                    </button>
+                </form>
+            </div>
+        </div>
     </div>
-  </nav>
-  <!-- Akhir Navbar -->
+    <!-- Akhir Contact -->
 
-  <!-- Jumbotron -->
-  <section class="jumbotron text-center">
-    <img src="/Portofolio/img/Agung.jpg" data-aos="fade-out" alt="Agung Hidayat" width="200"
-      class="rounded-circle img-thumbnail">
-    <h1 class="display-4" data-aos="fade-out">Agung Hidayat</h1>
-    <p class="lead" data-aos="fade-up">Freelance I Content Creator</p>
-  </section>
+    <div id="footer"></div>
 
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#e2edff" fill-opacity="1"
-      d="M0,160L48,170.7C96,181,192,203,288,186.7C384,171,480,117,576,106.7C672,96,768,128,864,160C960,192,1056,224,1152,218.7C1248,213,1344,171,1392,149.3L1440,128L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
-    </path>
-  </svg>
-  <!-- Akhir Jumbotron -->
+    <!-- Content-->
+    <script>
+        fetch("/content/navbar.html")
+            .then((snap) => snap.text())
+            .then((result) => {
+                navbar.innerHTML = result;
+            });
 
-  <!-- About -->
-  <section id="About">
-    <div class="container" data-aos="fade-in">
-      <div class="row text-center justify-content-center mb-5">
-        <div class="col">
-          <h2>About Me</h2>
-        </div>
-      </div>
-      <div class="row justify-content-center fs-5 text-center">
-        <div class="col-md-4" data-aos="fade-out">
-          <p>Perkenalkan Nama Saya Agung Hidayat, Saya sekolah Lulusan SMK AN-NAHL angkatan tahun 2022, Hobi saya
-            Menonton Anime, Main Game, Menggambar, dan Oprek Komputer.</p>
-        </div>
-        <div class="col-md-4" data-aos="fade-out">
-          <p> Sekarang saya sedang belajar membuat Website, Upload konten Youtube dan TikTok.</p>
-        </div>
-      </div>
-    </div>
-  </section>
+        fetch("/content/footer.html")
+            .then((snap) => snap.text())
+            .then((result) => {
+                footer.innerHTML = result;
+            });
 
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#e2edff" fill-opacity="1"
-      d="M0,192L48,192C96,192,192,192,288,208C384,224,480,256,576,250.7C672,245,768,203,864,170.7C960,139,1056,117,1152,112C1248,107,1344,117,1392,122.7L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-    </path>
-  </svg>
-  <!-- Akhir About -->
+        fetch("/content/about.html")
+            .then((snap) => snap.text())
+            .then((result) => {
+                about.innerHTML = result;
+            });
 
-  <!-- Project -->
-  <div class="main" id="section2">
-    <section style="background-color:#e2edff;">
-      <div class="container">
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2>
-              My Project
-            </h2>
-          </div>
-        </div>
-        <div class="row justify-content-center">
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left">
-              <a href="All Script Skin ML/index.html">
-                <img src="img/Project/1.All Script Skin ML.png" class="card-img-top" alt="Project1">
-              </a>
-              <div class="card-body">
-                <p class="card-text">Download script skin Mobile Legends.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-delay="100">
-              <a href="/Anime/index.html">
-                <img src="img/Project/2.Anime.png" class="card-img-top" alt="Project2">
-              </a>
-              <div class="card-body">
-                <p class="card-text">Download Anime Subtitel Indonesia</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-delay="200">
-              <img src="img/Project/3.jpg" class="card-img-top" alt="Project3">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-delay="300">
-              <img src="img/Project/4.jpg" class="card-img-top" alt="Project4">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3">
-            <div class="card" data-aos="flip-left" data-aos-delay="400">
-              <img src="img/Project/5.jpg" class="card-img-top" alt="Project5">
-              <div class="card-body">
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                  card's content.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </div>
+        fetch("/content/project.html")
+            .then((snap) => snap.text())
+            .then((result) => {
+                project.innerHTML = result;
+            });
 
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#e2edff" fill-opacity="1"
-      d="M0,32L40,69.3C80,107,160,181,240,176C320,171,400,85,480,80C560,75,640,149,720,181.3C800,213,880,203,960,181.3C1040,160,1120,128,1200,128C1280,128,1360,160,1400,176L1440,192L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z">
-    </path>
-  </svg>
-  <!-- Akhir Project -->
+        fetch("/content/jumbotron.html")
+            .then((snap) => snap.text())
+            .then((result) => {
+                jumbotron.innerHTML = result;
+            });
+    </script>
 
-  <!-- Contact -->
-  <div class="container">
-    <div class="row">
-      <div class="col-sm-10 offset-sm-1 col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+    <!-- AOS Animasi -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 
-        <div class="alert alert-success alert-dismissible fade show d-none my-alert" role="alert">
-          <strong>Terimakasih!</strong> Pesan anda sudah terkirim.
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </div>
+    <!-- Javascript Bootstaps -->
+    <script src="/bantu/bootstrap/js/bootstrap.bundle.min.js"></script>
 
-        <div class="main" id="section3">
-          <h2 style="text-align:center;">Contact Me</h2>
-        </div>
-
-        <form name="agung-contact-form">
-          <div class="mb-3">
-            <label for="name" class="form-label">Nama Lengkap</label>
-            <input type="name" class="form-control" id="name" name="nama" />
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control" id="email" name="email" />
-          </div>
-          <div class="mb-3">
-            <label for="pesan" class="form-label">Pesan</label>
-            <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary btn-sm pt-2 pb-2 ps-3 pe-3 btn-kirim">Kirim</button>
-          <button class="btn btn-primary btn-loading d-none" type="button" disabled>
-            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
-            Loading...
-          </button>
-        </form>
-
-      </div>
-    </div>
-  </div>
-  <!-- Akhir Contact -->
-
-  <!-- footer -->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#0d6efd" fill-opacity="1"
-      d="M0,128L48,122.7C96,117,192,107,288,112C384,117,480,139,576,165.3C672,192,768,224,864,240C960,256,1056,256,1152,218.7C1248,181,1344,107,1392,69.3L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
-    </path>
-  </svg>
-
-  <footer class="bg-primary text-white text-center pb-3">
-    <p>Created with <i class="bi bi-heart-fill text-danger"></i> By <a href="../index.html"
-        class="text-white fw-bold">Agung Hidayat</a> </p>
-  </footer>
-  <!-- Akhir footer -->
-
-  <!-- Agung Form Sheets -->
-  <script>
-    const scriptURL =
-      'https://script.google.com/macros/s/AKfycbydDy17YwtpMzDcnrKXvcKJeljqgcR8pAxc8nXLzet3mTlFYjRynw8qHtKzhsgSVB63/exec'
-    const form = document.forms['agung-contact-form']
-    const btnKirim = document.querySelector('.btn-kirim')
-    const btnLoading = document.querySelector('.btn-loading')
-    const myAlert = document.querySelector('.my-alert')
-
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      // Ketika tombol diklik
-      // Tampilkan tombol Loading, hilangkan tombol Kirim
-      btnLoading.classList.toggle('d-none')
-      btnKirim.classList.toggle('d-none')
-
-      fetch(scriptURL, {
-          method: 'POST',
-          body: new FormData(form)
-        })
-        .then(response => {
-          // Tampilkan tombol Kirim, hilangkan tombol Loading
-          btnLoading.classList.toggle('d-none')
-          btnKirim.classList.toggle('d-none')
-
-          // Tampilak Alert
-          myAlert.classList.toggle('d-none')
-
-          // Reset Form
-          form.reset();
-
-          console.log('Success!', response)
-        })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
-  <!-- Akhir Form Sheets -->
-
-
-  <!-- AOS Animasi -->
-  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-  <script>
-    AOS.init({
-      once: true,
-    });
-  </script>
-
-
-  <!-- Boostraps -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
-  </script>
+    <!-- My Script -->
+    <script src="/bantu/script.js"></script>
 
 </body>
 
